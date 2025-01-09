@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/adsp_sleep_monitor.conf:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/adsp_sleep_monitor.conf \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes.xml \
@@ -1330,8 +1329,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/media_codecs_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cliffs_v0.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/media_codecs_performance_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cliffs_v0.xml \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
@@ -1359,33 +1356,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0006.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0006.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0007.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0007.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0008.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0008.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0009.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0009.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0010.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0010.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0011.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0011.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0012.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0012.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0013.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0014.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0014.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0015.0_config.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0014_version_update_modules.sql \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
     vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua.txt \
     vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt \
@@ -2668,6 +2638,7 @@ PRODUCT_PACKAGES += \
     QFingerprintService \
     TimeService \
     uimgbaservice \
+    AtFwd2 \
     ImsRcsService \
     QesdkSysService \
     QtiTelephony \
