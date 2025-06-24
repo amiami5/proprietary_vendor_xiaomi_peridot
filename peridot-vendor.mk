@@ -1445,11 +1445,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
-    vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.0.so \
-    vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.1.so \
-    vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.qesdhal@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhal@1.2.so \
-    vendor/xiaomi/peridot/proprietary/system_ext/lib64/vendor.qti.qesdhalaidl-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qesdhalaidl-V2-ndk.so \
-    vendor/xiaomi/peridot/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/peridot/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/xiaomi/peridot/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/peridot/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -1463,6 +1458,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/peridot/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/peridot/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/xiaomi/peridot/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/xiaomi/peridot/proprietary/vendor/bin/diag-router:$(TARGET_COPY_OUT_VENDOR)/bin/diag-router \
     vendor/xiaomi/peridot/proprietary/vendor/bin/displayfeature:$(TARGET_COPY_OUT_VENDOR)/bin/displayfeature \
     vendor/xiaomi/peridot/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
@@ -1558,7 +1554,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
     vendor/xiaomi/peridot/proprietary/vendor/bin/vendor.qti.diag.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.diag.sh \
     vendor/xiaomi/peridot/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
-    vendor/xiaomi/peridot/proprietary/vendor/bin/vendor.qti.qspmhal-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal-service \
     vendor/xiaomi/peridot/proprietary/vendor/bin/vendor_modprobe.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_modprobe.sh \
     vendor/xiaomi/peridot/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/xiaomi/peridot/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
@@ -1726,7 +1721,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -1788,7 +1782,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm.policy \
@@ -1809,7 +1802,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -1882,8 +1874,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/deviceInfoServiceModuleNr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModuleNr.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libEGL_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_angle.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libGLESv1_CM_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_angle.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libGLESv2_angle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_angle.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio-impl-qti.so \
@@ -1897,7 +1892,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/gyro_fusion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gyro_fusion_interface.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/libEseUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libEseUtils.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/libqtigatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libqtigatekeeper.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/sound_trigger.primary.pineapple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.pineapple.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm-impl.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
@@ -1997,7 +1991,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libcert_parse.wpa_s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcert_parse.wpa_s.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libclstc_algorithm_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_algorithm_adapter.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libclstc_gcp_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_gcp_adapter.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libclstc_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclstc_tm.so \
@@ -2094,8 +2087,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/liblmthermallistner.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmthermallistner.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/liblmutils-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblmutils-ns.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libloadtrusteduiapp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadtrusteduiapp.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libloc_api_wds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_wds.so \
@@ -2127,7 +2118,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmemutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemutils.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmialgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libmilut.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmilut.so \
@@ -2264,7 +2254,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqsh_ble_pb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsh_ble_pb.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqshcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqshcamera.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libqspm-mem-utils-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqspm-mem-utils-vendor.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqti-qesdk-secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-qesdk-secure.so \
@@ -2450,7 +2439,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvol.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdap.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libquasar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libquasar.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libspatializer.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
@@ -2531,7 +2519,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qxr-V1-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.am-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am-V1-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.common-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.common-V1-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so \
@@ -2613,9 +2600,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdhalaidl-V2-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qesdsys-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V3-ndk.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qesdsys-V4-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qesdsys-V4-ndk.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal-V1-ndk.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal-impl.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so \
@@ -2724,7 +2708,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
-    vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.xiaomi.hardware.vibratorfeature.service.xml \
