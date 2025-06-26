@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- MIUI ADD: Adapt_MIUIAdaptFrame-->
 <features>
 <!-- BSP BEGIN -->
     <!-- Whether support WildBoost -->
@@ -144,12 +145,6 @@
     <integer name="check_attention_type">4</integer>
     <!-- The fps of aon_screen_off-->
     <integer name="aon_screen_off_fps">0</integer>
-    <!-- whether support aon gesture -->
-    <bool name="config_aon_gesture_available">true</bool>
-    <!-- whether support visual_perception-->
-    <bool name="config_visual_perception_available">true</bool>
-    <!-- whether support aon screen off-->
-    <bool name="config_aon_screen_off_available">true</bool>
     <!-- whether support always on -->
     <bool name="support_aod">true</bool>
     <!-- whether support double tap to wake up device -->
@@ -260,6 +255,8 @@
 <!-- Telephony BEGIN -->
     <!--whether the device supports voip record -->
     <bool name="support_voip_record">true</bool>
+    <!--whether the device supports conversation_tool_box voip record -->
+    <bool name="support_conversation_toolbox_voiprecord">true</bool>
     <bool name="support_new_silentmode">true</bool>
 <!-- Telephony END -->
 
@@ -839,14 +836,8 @@
     <!-- MIUI ADD: Power_PowerSaveModeV2 -->
     <!-- whether the device supports UnionPower features -->
     <bool name="support_power_save_new">true</bool>
-    <bool name="support_cpu_doze">true</bool>
-    <bool name="support_video_idle_dim">false</bool>
     <!-- END Power_PowerSaveModeV2 -->
     <!-- open keep tp_idle in dim state featrue -->
     <bool name="support_idle_dim">true</bool>
-    <!--  MIUI ADD: PKMS_ParentalControl  -->
-    <bool name="support_parental_control">true</bool>
-    <!-- END PKMS_ParentalControl -->
 </features>
-
-
+<!-- END Adapt_MIUIAdaptFrame-->
