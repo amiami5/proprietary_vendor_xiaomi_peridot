@@ -958,6 +958,7 @@
     <TAG id="0xc000030" name="misound_hph_earcomp_bandgains_r"/>
     <TAG id="0xc000031" name="misound_karaoke_vocal_reserved1"/>
     <TAG id="0xc000032" name="camera_gain"/>
+    <TAG id="0xc000033" name="dolby_effect_param_tag"/>
     <TAG id="0xc000035" name="misound_hph_sdid_bandgains"/>
     <TAG id="0xc000036" name="spatial surround enable"/>
     <TAG id="0xc000038" name="misound_hph_canal_calib"/>
